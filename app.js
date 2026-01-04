@@ -1,0 +1,60 @@
+function toggleDark(){
+  document.body.classList.toggle("dark");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job | One Day Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="One Day Work Logo" class="logo">
+    <a href="index.html" class="btn secondary">Home</a>
+  </div>
+</header>
+
+<section class="post-job-section">
+  <div class="job-card">
+    <h2>Post Your One-Day Job</h2>
+    <form id="jobForm">
+
+      <label for="jobType">Job Type</label>
+      <select id="jobType" required>
+        <option value="">Select a job type</option>
+        <option value="cleaning">🧹 Cleaning</option>
+        <option value="cooking">🍳 Cooking</option>
+        <option value="helper">🔧 Helper</option>
+        <option value="event">🎪 Event Work</option>
+        <option value="packing">🚚 Packing</option>
+        <option value="gardening">🌿 Gardening</option>
+      </select>
+
+      <label for="jobDate">Job Date</label>
+      <input type="date" id="jobDate" required />
+
+      <label for="jobTime">Job Time</label>
+      <input type="time" id="jobTime" required />
+
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="Enter your location" required />
+
+      <label for="payment">Payment (₹)</label>
+      <input type="number" id="payment" placeholder="Enter amount" min="50" required />
+
+      <button type="submit" class="btn primary">Post Job</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 One Day Work</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

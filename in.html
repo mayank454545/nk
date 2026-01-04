@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Day Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>One Day Work</h1>
+    <p>Find or Hire One-Day Jobs</p>
+
+    <div class="buttons">
+        <button onclick="selectRole('hirer')">I want to Hire</button>
+        <button onclick="selectRole('worker')">I want to Work</button>
+    </div>
+
+    <div id="formSection" class="hidden">
+        <h2 id="roleTitle"></h2>
+
+        <input type="text" id="jobType" placeholder="Job Type">
+        <input type="text" id="location" placeholder="Location">
+        <input type="number" id="payment" placeholder="Payment (₹)">
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

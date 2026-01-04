@@ -1,0 +1,58 @@
+/* Reset */
+body { margin:0; font-family:'Segoe UI',sans-serif; background:#f3f4f6; color:#1f2937; }
+body.dark { background:#111827; color:#f3f4f6; }
+
+/* Header */
+header { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background: linear-gradient(90deg, #2563eb,#22c55e); color:white; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+header .logo { height:50px; }
+header .dark-toggle, header .btn { background:none; border:none; color:white; cursor:pointer; font-size:18px; }
+
+/* Hero Section */
+.hero { text-align:center; padding:80px 20px; background:linear-gradient(135deg,#2563eb,#22c55e); color:white; }
+.hero h1 { font-size:38px; margin-bottom:10px; }
+.hero p { font-size:18px; margin-bottom:20px; }
+.hero-buttons .btn { margin:10px; padding:14px 24px; font-size:16px; border-radius:12px; border:none; cursor:pointer; transition:0.3s; font-weight:bold;}
+.hero-buttons .primary { background:white; color:#2563eb; }
+.hero-buttons .primary:hover { background:#f3f4f6; }
+.hero-buttons .secondary { background: #fb923c; color:white; }
+.hero-buttons .secondary:hover { background: #f97316; }
+
+/* Services Section */
+.services { padding:60px 20px; text-align:center; background:#f3f4f6; }
+.services h2 { color:#8b5cf6; font-size:28px; margin-bottom:30px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:20px; max-width:900px; margin:auto; }
+.service-card { background:linear-gradient(135deg,#8b5cf6,#ec4899); color:white; padding:30px 20px; border-radius:16px; font-size:18px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:0.3s;}
+.service-card:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+
+/* How it works */
+.how { padding:60px 20px; text-align:center; background:#fff; }
+.how h2 { color:#fb923c; font-size:28px; margin-bottom:30px; }
+.steps { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+.step { background:linear-gradient(135deg,#fb923c,#facc15); color:white; padding:20px; border-radius:16px; width:150px; font-size:16px; text-align:center; transition:0.3s; }
+.step:hover { transform:translateY(-5px); box-shadow:0 6px 12px rgba(0,0,0,0.2); }
+
+/* Workers */
+.workers { padding:40px 20px; }
+.worker-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.worker-card { background:linear-gradient(135deg,#14b8a6,#06b6d4); color:white; padding:20px; border-radius:16px; text-align:center; transition:0.3s; }
+.worker-card:hover { transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+.worker-card button { margin-top:10px; padding:10px 16px; border:none; border-radius:10px; background:linear-gradient(135deg,#fb923c,#facc15); color:#1f2937; cursor:pointer; transition:0.3s; font-weight:bold;}
+.worker-card button:hover { background:linear-gradient(135deg,#f97316,#fcd34d); }
+
+/* Post Job Section */
+.post-job-section { display:flex; justify-content:center; padding:60px 20px; background:#f3f4f6; }
+.job-card { background:linear-gradient(135deg,#8b5cf6,#ec4899); padding:40px; border-radius:20px; max-width:450px; width:100%; box-shadow:0 10px 25px rgba(0,0,0,0.2); color:white; transition: transform 0.3s, box-shadow 0.3s; }
+.job-card:hover { transform:translateY(-5px); box-shadow:0 15px 30px rgba(0,0,0,0.3); }
+.job-card h2 { text-align:center; margin-bottom:25px; font-size:28px; }
+.job-card form label { display:block; margin-top:15px; margin-bottom:6px; font-weight:bold; }
+.job-card form input, .job-card form select { width:100%; padding:12px; border-radius:10px; border:none; margin-bottom:10px; font-size:16px; background:rgba(255,255,255,0.2); color:white; }
+.job-card form input::placeholder, .job-card form select { color:#f0f0f0; }
+.job-card form input:focus, .job-card form select:focus { outline:none; box-shadow:0 0 8px #fff; }
+.job-card .btn.primary { width:100%; padding:14px; font-size:18px; margin-top:10px; border-radius:12px; border:none; cursor:pointer; background:linear-gradient(135deg,#fb923c,#facc15); color:#1f2937; font-weight:bold; transition:0.3s; }
+.job-card .btn.primary:hover { background:linear-gradient(135deg,#f97316,#fcd34d); color:#1f2937; transform:scale(1.03); }
+
+/* Footer */
+footer { text-align:center; padding:20px; background:#111827; color:#9ca3af; }
+
+/* Responsive */
+@media(max-width:768px){ .hero h1{ font-size:28px; } .grid{ grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); } .steps div{ width:120px; font-size:14px; padding:14px; } }
